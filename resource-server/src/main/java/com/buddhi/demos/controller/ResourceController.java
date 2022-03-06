@@ -1,9 +1,7 @@
 package com.buddhi.demos.controller;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
-import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author: pray-journey.io
@@ -11,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @date: created in 2022/3/6
  * @modified:
  */
+@RestController
 public class ResourceController {
     @GetMapping("/account")
     public String getAccount() {

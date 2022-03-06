@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableResourceServer
-@RestController
 public class ResourceServer {
 
 	public static void main(String[] args) {
