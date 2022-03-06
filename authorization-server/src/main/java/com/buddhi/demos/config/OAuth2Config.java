@@ -1,4 +1,4 @@
-package com.buddhi.demos;
+package com.buddhi.demos.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
