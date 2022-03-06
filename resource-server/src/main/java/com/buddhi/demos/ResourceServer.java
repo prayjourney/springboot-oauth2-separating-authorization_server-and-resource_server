@@ -18,17 +18,4 @@ public class ResourceServer {
 		SpringApplication.run(ResourceServer.class, args);
 	}
 
-	@GetMapping("/account")
-	public String getAccount() {
-		return "account 1";
-	}
-
-    @Bean
-    public ResourceServerTokenServices tokenService() {
-        RemoteTokenServices tokenServices = new RemoteTokenServices();
-        tokenServices.setClientId("b");
-        tokenServices.setClientSecret("b");
-        tokenServices.setCheckTokenEndpointUrl("http://localhost:8100/oauth/check_token");
-        return tokenServices;
-    }
 }
